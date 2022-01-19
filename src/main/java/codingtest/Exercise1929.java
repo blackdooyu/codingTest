@@ -3,7 +3,7 @@ package main.java.codingtest;
 import java.util.Scanner;
 
 /**
- 백준 1929번 소수 구하기 X
+ 백준 1929번 소수 구하기
  **/
 public class Exercise1929 {
 
