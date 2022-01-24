@@ -43,5 +43,5 @@ public class Exercise1449 {
         }
         return count;
     }
-    }
+}
 
