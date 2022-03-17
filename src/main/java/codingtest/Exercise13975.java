@@ -14,14 +14,13 @@ public class Exercise13975 {
         BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
         int testCase = Integer.parseInt(br.readLine());
 
-        PriorityQueue<Long> pq;
+        PriorityQueue<Long> pq = new PriorityQueue<>();
         StringTokenizer st;
 
         for (int i = 0; i < testCase; i++) {
             int count = Integer.parseInt(br.readLine());
             long result = 0;
             st = new StringTokenizer(br.readLine());
-            pq = new PriorityQueue<>();
 
             for (int j = 0 ; j <count ; j++){
                 pq.add(Long.parseLong(st.nextToken()));
@@ -33,6 +32,7 @@ public class Exercise13975 {
                 result += n1 + n2;
                 pq.add(n1+n2);
             }
+            pq.clear();
             bw.append(result+"\n");
         }
 
